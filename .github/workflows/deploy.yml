@@ -1,36 +1,47 @@
 name: Deploy Quasar to GitHub Pages
 
+# Se ejecuta en cada push a main
 on:
   push:
     branches:
       - main
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      # 1️⃣ Clonar repo
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Install Node
+      # 2️⃣ Instalar Node 18
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 18
 
-      - name: Install dependencies
+      # 3️⃣ Limpiar node_modules y package-lock para evitar errores
+      - name: Clean dependencies
         run: |
           rm -rf node_modules package-lock.json
-          npm install
 
+      # 4️⃣ Instalar dependencias
+      - name: Install dependencies
+        run: npm install
+
+      # 5️⃣ Instalar Quasar CLI
       - name: Install Quasar CLI
         run: npm install -g @quasar/cli
 
-      - name: Build project
+      # 6️⃣ Build de producción
+      - name: Build Quasar project
         run: quasar build
 
+      # 7️⃣ Publicar en GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist/spa
+          publish_branch: gh-pages
