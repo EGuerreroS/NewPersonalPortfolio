@@ -1,0 +1,8 @@
+Model Information:
+* title:	Zombie Head
+* source:	https://sketchfab.com/3d-models/zombie-head-ac90d5f73d674c7eb77242b7d1543ec2
+* author:	KyronicOfficial (https://sketchfab.com/KyronicOfficial)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works
