@@ -1,0 +1,156 @@
+/* ============================================================
+   VARIABLES.CSS — Paleta oficial SoftWaves
+   Regla 60-30-10:
+     60% → Azul   #014ba0  (fondos, superficies, áreas grandes)
+     30% → Morado #7f00b2  (headings, nav, tarjetas, bordes)
+     10% → Amarillo #ffff00 (CTAs, activos, highlights)
+   ============================================================ */
+
+:root {
+  /* --- Paleta base --- */
+  --blue:          #014ba0;
+  --blue-light:    #1466c3;
+  --blue-lighter:  #5275c8;
+  --blue-dark:     #002c74;
+  --blue-darkest:  #001040;
+
+  --purple:        #7f00b2;
+  --purple-light:  #a21ad7;
+  --purple-lighter:#c050f0;
+  --purple-dark:   #530084;
+  --purple-darkest:#1b004b;
+
+  --yellow:        #ffff00;
+  --yellow-muted:  #e6d800;   /* suavizado para fondos claros */
+  --yellow-dark:   #b8ac00;   /* contraste en texto sobre amarillo */
+
+  /* --- Gradientes --- */
+  --gradient:        linear-gradient(135deg, #014ba0 0%, #7f00b2 100%);
+  --gradient-rev:    linear-gradient(135deg, #7f00b2 0%, #014ba0 100%);
+  --gradient-text:   linear-gradient(135deg, #1466c3, #a21ad7);
+  --gradient-yellow: linear-gradient(135deg, #014ba0, #ffff00);
+
+  /* --- Tipografía --- */
+  --font-main: 'Poppins', sans-serif;
+  --font-mono: 'Fira Code', 'JetBrains Mono', monospace;
+
+  --text-xs:   0.75rem;
+  --text-sm:   0.875rem;
+  --text-base: 1rem;
+  --text-lg:   1.125rem;
+  --text-xl:   1.25rem;
+  --text-2xl:  1.5rem;
+  --text-3xl:  1.875rem;
+  --text-4xl:  2.25rem;
+  --text-5xl:  3rem;
+  --text-6xl:  3.75rem;
+
+  /* --- Espaciado --- */
+  --space-1:  0.25rem;
+  --space-2:  0.5rem;
+  --space-3:  0.75rem;
+  --space-4:  1rem;
+  --space-5:  1.25rem;
+  --space-6:  1.5rem;
+  --space-8:  2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+
+  /* --- Bordes --- */
+  --radius-sm:   6px;
+  --radius-md:   12px;
+  --radius-lg:   20px;
+  --radius-xl:   32px;
+  --radius-full: 9999px;
+
+  /* --- Transiciones --- */
+  --transition-fast: 150ms ease;
+  --transition-base: 300ms ease;
+  --transition-slow: 500ms ease;
+}
+
+/* ===================== MODO CLARO (default) =====================
+   60% → Azul muy claro en fondos
+   30% → Morado en elementos UI
+   10% → Amarillo en CTAs y activos
+   ============================================================== */
+[data-theme="light"] {
+  /* Fondos — 60% azul expresado en tonos suaves */
+  --bg-primary:    #f0f5ff;
+  --bg-secondary:  #e2ecff;
+  --bg-card:       #ffffff;
+  --bg-card-hover: #f5f8ff;
+  --bg-navbar:     rgba(240, 245, 255, 0.88);
+
+  /* Texto */
+  --text-primary:   #030c1e;
+  --text-secondary: #0c2a66;
+  --text-muted:     #3d6499;
+
+  /* Bordes — 30% morado */
+  --border-color:  #d0bce8;
+  --border-hover:  #7f00b2;
+
+  /* Tags / badges */
+  --tag-bg:    rgba(127, 0, 178, 0.08);
+  --tag-color: #7f00b2;
+
+  /* Sombras */
+  --shadow-sm:     0 1px 3px rgba(1, 75, 160, 0.08);
+  --shadow-md:     0 4px 16px rgba(1, 75, 160, 0.12);
+  --shadow-lg:     0 10px 40px rgba(1, 75, 160, 0.16);
+  --shadow-card:   0 4px 24px rgba(127, 0, 178, 0.10);
+  --shadow-navbar: 0 2px 20px rgba(1, 75, 160, 0.12);
+  --shadow-glow:   0 0 32px rgba(127, 0, 178, 0.25);
+
+  --overlay-bg:    rgba(240, 245, 255, 0.96);
+  --timeline-line: linear-gradient(180deg, #014ba0, #7f00b2);
+  --section-alt:   #e2ecff;
+
+  /* Ícono activo */
+  --icon-color: #7f00b2;
+}
+
+/* ===================== MODO OSCURO =====================
+   60% → Azul muy oscuro en fondos (navy profundo)
+   30% → Morado en elementos UI
+   10% → Amarillo en CTAs y activos
+   ======================================================= */
+[data-theme="dark"] {
+  /* Fondos — 60% azul expresado en navy oscuro */
+  --bg-primary:    #000d1f;
+  --bg-secondary:  #01152e;
+  --bg-card:       #011a3a;
+  --bg-card-hover: #022050;
+  --bg-navbar:     rgba(0, 13, 31, 0.92);
+
+  /* Texto */
+  --text-primary:   #eef3ff;
+  --text-secondary: #7fa8e8;
+  --text-muted:     #3d6499;
+
+  /* Bordes — 30% morado */
+  --border-color:  #1b0038;
+  --border-hover:  #a21ad7;
+
+  /* Tags / badges */
+  --tag-bg:    rgba(162, 26, 215, 0.18);
+  --tag-color: #c050f0;
+
+  /* Sombras */
+  --shadow-sm:     0 1px 3px rgba(0, 0, 0, 0.35);
+  --shadow-md:     0 4px 16px rgba(0, 0, 0, 0.45);
+  --shadow-lg:     0 10px 40px rgba(0, 0, 0, 0.55);
+  --shadow-card:   0 4px 24px rgba(0, 0, 0, 0.40);
+  --shadow-navbar: 0 2px 20px rgba(0, 0, 0, 0.50);
+  --shadow-glow:   0 0 32px rgba(162, 26, 215, 0.35);
+
+  --overlay-bg:    rgba(0, 13, 31, 0.97);
+  --timeline-line: linear-gradient(180deg, #1466c3, #a21ad7);
+  --section-alt:   #01152e;
+
+  --icon-color: #a21ad7;
+}

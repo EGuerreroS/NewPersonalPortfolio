@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portafolio profesional de Edgar Geovanny Guerrero Santana — Ingeniero en Electrónica y Computación, especialista en desarrollo de software con énfasis en diseño y experiencia de usuario." />
+  <meta name="author" content="Edgar Geovanny Guerrero Santana" />
+  <title>Edgar Guerrero — Portafolio</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Icons (Phosphor) -->
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1/src/index.js" defer></script>
+
+  <!-- CSS — Variables primero, luego base, luego animaciones, luego secciones -->
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/about.css" />
+  <link rel="stylesheet" href="css/experience.css" />
+  <link rel="stylesheet" href="css/skills.css" />
+  <link rel="stylesheet" href="css/projects.css" />
+  <link rel="stylesheet" href="css/education.css" />
+  <link rel="stylesheet" href="css/softwaves.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+
+  <!-- Theme: aplicar antes de renderizar para evitar flash -->
+  <script src="js/theme.js"></script>
+</head>
+<body>
+
+<!-- ============================================================
+     NAVBAR
+     ============================================================ -->
+<nav id="navbar" role="navigation" aria-label="Navegación principal">
+  <div class="container navbar-inner">
+
+    <a href="#hero" class="navbar-brand" aria-label="Inicio">
+      <div class="brand-initials" aria-hidden="true">EG</div>
+      <span class="brand-name">Edgar Guerrero</span>
+    </a>
+
+    <ul class="navbar-links" role="list">
+      <li><a href="#about"      class="active">Sobre mí</a></li>
+      <li><a href="#experience">Experiencia</a></li>
+      <li><a href="#skills">    Habilidades</a></li>
+      <li><a href="#projects">  Proyectos</a></li>
+      <li><a href="#education"> Formación</a></li>
+      <li><a href="#softwaves"> SoftWaves</a></li>
+      <li><a href="#contact">   Contacto</a></li>
+    </ul>
+
+    <div class="navbar-controls">
+      <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
+        <i class="ph ph-moon icon-moon"  aria-hidden="true"></i>
+        <i class="ph ph-sun  icon-sun"   aria-hidden="true"></i>
+      </button>
+
+      <button id="hamburger" class="hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+  </div>
+</nav>
+
+<!-- Menú móvil (overlay) -->
+<div id="mobile-menu" class="mobile-menu" aria-label="Menú móvil">
+  <a href="#about"      data-section="about">      Sobre mí</a>
+  <a href="#experience" data-section="experience"> Experiencia</a>
+  <a href="#skills"     data-section="skills">     Habilidades</a>
+  <a href="#projects"   data-section="projects">   Proyectos</a>
+  <a href="#education"  data-section="education">  Formación</a>
+  <a href="#softwaves"  data-section="softwaves">  SoftWaves</a>
+  <a href="#contact"    data-section="contact">    Contacto</a>
+</div>
+
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section id="hero">
+  <div class="hero-bg" aria-hidden="true">
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="hero-orb hero-orb-3"></div>
+  </div>
+
+  <div class="container hero-inner">
+
+    <!-- Contenido texto -->
+    <div class="hero-content">
+      <p class="hero-greeting">¡Hola! Soy</p>
+
+      <h1 class="hero-name">
+        <span class="first-name">Edgar</span>
+        <span class="last-name">Guerrero Santana</span>
+      </h1>
+
+      <div class="hero-typewriter" aria-live="polite">
+        <span class="typewriter-prefix">Soy&nbsp;</span>
+        <span id="typewriter-text"></span>
+        <span class="typewriter-cursor" aria-hidden="true"></span>
+      </div>
+
+      <p class="hero-description">
+        Donde la creatividad y la funcionalidad se unen, nacen diseños que cautivan y conectan.
+        Con más de 5 años de experiencia en desarrollo de software, especializado en crear
+        experiencias digitales excepcionales. Basado en <strong>Ameca, Jalisco</strong>.
+      </p>
+
+      <div class="hero-chips">
+        <span class="hero-chip">
+          <i class="ph ph-map-pin"></i> Ameca, Jalisco
+        </span>
+        <span class="hero-chip">
+          <i class="ph ph-briefcase"></i> 5+ años de experiencia
+        </span>
+        <span class="hero-chip">
+          <i class="ph ph-code"></i> 8 proyectos completados
+        </span>
+        <span class="hero-chip">
+          <i class="ph ph-trophy"></i> Ganador de Exposoftware
+        </span>
+      </div>
+
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">
+          <i class="ph ph-folder-open"></i> Ver proyectos
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          <i class="ph ph-envelope"></i> Contáctame
+        </a>
+      </div>
+
+      <div class="hero-social">
+        <span class="social-label">Redes</span>
+        <div class="social-divider" aria-hidden="true"></div>
+        <a href="https://github.com/EGuerreroS" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <i class="ph ph-github-logo"></i>
+        </a>
+        <a href="https://www.instagram.com/geo_eggs/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <i class="ph ph-instagram-logo"></i>
+        </a>
+        <a href="mailto:giohps@gmail.com" aria-label="Email">
+          <i class="ph ph-envelope-simple"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Visual / Avatar -->
+    <div class="hero-visual" aria-hidden="true">
+      <div class="hero-avatar-wrap">
+        <div class="hero-avatar">
+          <!-- Reemplaza esta imagen con tu foto: assets/img/profile.jpg -->
+          <img src="assets/img/profile.jpg"
+               alt="Foto de Edgar Guerrero Santana"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="avatar-placeholder" style="display:none;">EG</div>
+        </div>
+
+        <!-- Badges flotantes -->
+        <div class="hero-badge hero-badge-exp">
+          <span class="badge-icon">💻</span>
+          <div>
+            <div style="font-size:0.7rem;color:var(--text-muted);">Experiencia</div>
+            <div>5+ años Dev</div>
+          </div>
+        </div>
+
+        <div class="hero-badge hero-badge-hack">
+          <span class="badge-icon">🏆</span>
+          <div>
+            <div style="font-size:0.7rem;color:var(--text-muted);">Proyectos</div>
+            <div>8 Completados</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /hero-inner -->
+
+  <!-- Wave inferior -->
+  <div class="hero-wave" aria-hidden="true">
+    <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z" fill="var(--bg-primary)" />
+    </svg>
+  </div>
+
+  <div class="scroll-indicator" aria-hidden="true">
+    <div class="scroll-mouse"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     ABOUT — Sobre mí
+     ============================================================ -->
+<section id="about">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="section-label">Conóceme</span>
+      <h2 class="section-title">Sobre <span>mí</span></h2>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="about-grid">
+
+      <!-- Texto -->
+      <div class="about-content fade-left">
+        <p class="about-tagline">
+          Donde la creatividad y la funcionalidad se unen, nacen diseños que cautivan y conectan.
+        </p>
+
+        <p class="about-text">
+          Soy <strong>Ingeniero en Electrónica y Computación</strong> con énfasis en desarrollo 
+          de software egresado del Centro Universitario de los Valles (UdeG). Con más de 5 años 
+          de experiencia desarrollando soluciones web y móviles para universidades, empresas y 
+          organizaciones. Mi especialidad es combinar diseño excepcional con funcionalidad robusta.
+        </p>
+
+        <p class="about-text">
+          He participado en concursos nacionales como <strong>ENACTUS Swift Change Makers HACKATHON</strong> 
+          en Monterrey y ENACTUS Changemakers Social Challenge en CDMX. Además, he sido ganador 
+          múltiple del concurso Exposoftware a nivel universitario. Cuento con certificación como 
+          <strong>Google UX Designer</strong> obtenida a través de Coursera.
+        </p>
+
+        <blockquote class="about-philosophy">
+          <p>
+            "Donde la creatividad y la funcionalidad se unen, nacen diseños que cautivan y conectan"
+          </p>
+        </blockquote>
+
+        <!-- Estadísticas -->
+        <div class="about-stats">
+          <div class="stat-item">
+            <div class="stat-number" data-count="5" data-suffix="+">0+</div>
+            <div class="stat-label">Años de<br>experiencia</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="8" data-suffix="">0</div>
+            <div class="stat-label">Proyectos<br>desarrollados</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="4" data-suffix="">0</div>
+            <div class="stat-label">Premios<br>Exposoftware</div>
+          </div>
+        </div>
+
+        <!-- Info de contacto rápido -->
+        <div class="about-info-list">
+          <div class="info-item">
+            <div class="info-icon"><i class="ph ph-map-pin"></i></div>
+            <span>Ameca, Jalisco — México</span>
+          </div>
+          <div class="info-item">
+            <div class="info-icon"><i class="ph ph-envelope-simple"></i></div>
+            <a href="mailto:giohps@gmail.com">giohps@gmail.com</a>
+          </div>
+          <div class="info-item">
+            <div class="info-icon"><i class="ph ph-github-logo"></i></div>
+            <a href="https://github.com/EGuerreroS" target="_blank" rel="noopener">github.com/EGuerreroS</a>
+          </div>
+          <div class="info-item">
+            <div class="info-icon"><i class="ph ph-instagram-logo"></i></div>
+            <a href="https://www.instagram.com/geo_eggs/" target="_blank" rel="noopener">Instagram — @geo_eggs</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Visual: tarjetas de roles -->
+      <div class="about-visual fade-right">
+        <div class="about-roles-grid">
+
+          <div class="role-card featured">
+            <div class="role-icon">🎨</div>
+            <div>
+              <div class="role-title">UX/UI Designer</div>
+              <div class="role-desc">
+                Certificado por Google en diseño de experiencia de usuario. 
+                Especialista en crear interfaces que conectan con las personas.
+              </div>
+            </div>
+          </div>
+
+          <div class="role-card">
+            <div class="role-icon">⚙️</div>
+            <div class="role-title">Full Stack</div>
+            <div class="role-desc">Backend robusto con Laravel y frontends modernos con Vue y Quasar.</div>
+          </div>
+
+          <div class="role-card">
+            <div class="role-icon">📱</div>
+            <div class="role-title">Mobile</div>
+            <div class="role-desc">Apps PWA con Quasar y desarrollo móvil con Swift y Firebase.</div>
+          </div>
+
+          <div class="role-card">
+            <div class="role-icon">🏢</div>
+            <div class="role-title">Gestión</div>
+            <div class="role-desc">Finanzas, marketing, ventas y user research para proyectos exitosos.</div>
+          </div>
+
+          <div class="role-card">
+            <div class="role-icon">🔬</div>
+            <div class="role-title">Investigación</div>
+            <div class="role-desc">User research y análisis de necesidades para soluciones efectivas.</div>
+          </div>
+
+          <div class="hackathon-badge">
+            <div class="hack-icon">🏆</div>
+            <div class="hack-info">
+              <div class="hack-title">Ganador Exposoftware</div>
+              <div class="hack-sub">1er lugar (3×) y 3er lugar (1×)</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div><!-- /about-grid -->
+  </div>
+</section>
+
+
+<!-- ============================================================
+     EXPERIENCE — Experiencia laboral
+     ============================================================ -->
+<section id="experience" class="alt-bg">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="section-label">Trayectoria</span>
+      <h2 class="section-title">Experiencia <span>profesional</span></h2>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="timeline">
+
+      <!-- Ítem 1 — Ingeniero en Operaciones de Acceso MEGA (Más reciente) -->
+      <div class="timeline-item right fade-up">
+        <div class="timeline-dot"><div class="timeline-dot-inner"></div></div>
+        <div class="timeline-card">
+          <div class="timeline-period">
+            <span class="period-dot"></span>
+            Agosto 2025 — Noviembre 2025
+          </div>
+          <div class="timeline-role">
+            Ingeniero en Operaciones de Acceso
+          </div>
+          <div class="timeline-company">
+            <i class="ph ph-buildings timeline-company-icon"></i>
+            MEGA
+          </div>
+          <p class="timeline-desc">
+            Realicé actividades de monitoreo, mantenimiento, soporte y mejora de la infraestructura
+            interna de la empresa. Trabajé con entornos de desarrollo Python y herramientas de software
+            internas para optimizar los procesos operativos.
+          </p>
+          <div class="timeline-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Monitoreo</span>
+            <span class="tag">Infraestructura</span>
+            <span class="tag">Soporte técnico</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ítem 2 — Ejecutivo Bancoppel -->
+      <div class="timeline-item left fade-up delay-1">
+        <div class="timeline-card">
+          <div class="timeline-period">
+            <span class="period-dot"></span>
+            Noviembre 2018 — Noviembre 2019
+          </div>
+          <div class="timeline-role">Ejecutivo</div>
+          <div class="timeline-company" style="justify-content:flex-end;">
+            <i class="ph ph-bank timeline-company-icon"></i>
+            Bancoppel
+          </div>
+          <p class="timeline-desc">
+            Promoción de ventas de productos asociados a la institución financiera y tienda departamental.
+            Realicé procesos de actividad interbancaria y apoyé a clientes en la obtención de créditos
+            e inversiones, desarrollando habilidades de persuasión y atención al cliente.
+          </p>
+          <div class="timeline-tags" style="justify-content:flex-end;">
+            <span class="tag">Ventas</span>
+            <span class="tag">Atención al cliente</span>
+            <span class="tag">Productos bancarios</span>
+            <span class="tag">Persuasión</span>
+          </div>
+        </div>
+        <div class="timeline-dot"><div class="timeline-dot-inner"></div></div>
+      </div>
+
+    </div><!-- /timeline -->
+  </div>
+</section>
+
+
+<!-- ============================================================
+     SKILLS — Habilidades
+     ============================================================ -->
+<section id="skills">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="section-label">Conocimientos</span>
+      <h2 class="section-title">Mis <span>habilidades</span></h2>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="skills-layout">
+
+      <!-- Lenguajes de programación -->
+      <div class="skill-category fade-up">
+        <div class="skill-category-header">
+          <div class="skill-category-icon">💻</div>
+          <div>
+            <div class="skill-category-title">Lenguajes de programación</div>
+            <div class="skill-category-sub">Siempre abierto a aprender nuevos</div>
+          </div>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag"><span class="tag-dot"></span>HTML</span>
+          <span class="skill-tag"><span class="tag-dot"></span>CSS</span>
+          <span class="skill-tag"><span class="tag-dot"></span>JavaScript</span>
+          <span class="skill-tag"><span class="tag-dot"></span>Python</span>
+          <span class="skill-tag"><span class="tag-dot"></span>C</span>
+          <span class="skill-tag"><span class="tag-dot"></span>C++</span>
+        </div>
+      </div>
+
+      <!-- Frameworks y librerías -->
+      <div class="skill-category fade-up delay-1">
+        <div class="skill-category-header">
+          <div class="skill-category-icon">🧩</div>
+          <div>
+            <div class="skill-category-title">Frameworks & Librerías</div>
+            <div class="skill-category-sub">Web, móvil y backend</div>
+          </div>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag"><span class="tag-dot"></span>Bootstrap</span>
+          <span class="skill-tag"><span class="tag-dot"></span>Laravel</span>
+          <span class="skill-tag"><span class="tag-dot"></span>Vue.js</span>
+          <span class="skill-tag"><span class="tag-dot"></span>Quasar</span>
+        </div>
+      </div>
+
+      <!-- Herramientas y DevOps -->
+      <div class="skill-category fade-up delay-2">
+        <div class="skill-category-header">
+          <div class="skill-category-icon">🛠️</div>
+          <div>
+            <div class="skill-category-title">Herramientas & DevOps</div>
+            <div class="skill-category-sub">Desarrollo y despliegue</div>
+          </div>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag"><span class="tag-dot"></span>MySQL</span>
+          <span class="skill-tag"><span class="tag-dot"></span>Git</span>
+          <span class="skill-tag"><span class="tag-dot"></span>GitHub</span>
+          <span class="skill-tag"><span class="tag-dot"></span>Figma</span>
+          <span class="skill-tag"><span class="tag-dot"></span>Postman</span>
+          <span class="skill-tag"><span class="tag-dot"></span>PHPMyAdmin</span>
+          <span class="skill-tag"><span class="tag-dot"></span>Jira</span>
+          <span class="skill-tag"><span class="tag-dot"></span>Orion</span>
+        </div>
+      </div>
+
+      <!-- Habilidades de negocio y liderazgo -->
+      <div class="skill-category fade-up delay-3">
+        <div class="skill-category-header">
+          <div class="skill-category-icon">📊</div>
+          <div>
+            <div class="skill-category-title">Diseño & Gestión</div>
+            <div class="skill-category-sub">UX/UI y habilidades de negocio</div>
+          </div>
+        </div>
+        <div class="business-skills">
+          <div class="business-skill-item">
+            <div class="business-icon">💰</div>
+            <div class="business-name">Finanzas</div>
+          </div>
+          <div class="business-skill-item">
+            <div class="business-icon">📈</div>
+            <div class="business-name">Marketing</div>
+          </div>
+          <div class="business-skill-item">
+            <div class="business-icon">💼</div>
+            <div class="business-name">Ventas</div>
+          </div>
+          <div class="business-skill-item">
+            <div class="business-icon">🔍</div>
+            <div class="business-name">User Research</div>
+          </div>
+          <div class="business-skill-item">
+            <div class="business-icon">🎨</div>
+            <div class="business-name">UX Design</div>
+          </div>
+          <div class="business-skill-item">
+            <div class="business-icon">📋</div>
+            <div class="business-name">Gestión de tareas</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Idiomas — ancho completo -->
+      <div class="skill-category full-width fade-up">
+        <div class="skill-category-header">
+          <div class="skill-category-icon">🌐</div>
+          <div>
+            <div class="skill-category-title">Idiomas</div>
+          </div>
+        </div>
+        <div class="languages-list">
+          <div class="language-item">
+            <span class="language-flag">🇲🇽</span>
+            <div class="language-info">
+              <div class="language-name">Español</div>
+              <div class="language-level">Nativo</div>
+            </div>
+            <div class="language-dots">
+              <div class="lang-dot filled"></div>
+              <div class="lang-dot filled"></div>
+              <div class="lang-dot filled"></div>
+              <div class="lang-dot filled"></div>
+              <div class="lang-dot filled"></div>
+            </div>
+          </div>
+          <div class="language-item">
+            <span class="language-flag">🇺🇸</span>
+            <div class="language-info">
+              <div class="language-name">Inglés</div>
+              <div class="language-level">Intermedio (B2)</div>
+            </div>
+            <div class="language-dots">
+              <div class="lang-dot filled"></div>
+              <div class="lang-dot filled"></div>
+              <div class="lang-dot filled"></div>
+              <div class="lang-dot"></div>
+              <div class="lang-dot"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /skills-layout -->
+  </div>
+</section>
+
+
+<!-- ============================================================
+     PROJECTS — Proyectos
+     ============================================================ -->
+<section id="projects" class="alt-bg">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="section-label">Portafolio</span>
+      <h2 class="section-title">Mis <span>proyectos</span></h2>
+      <div class="section-divider"></div>
+    </div>
+
+    <!-- Filtros -->
+    <div class="projects-filter fade-up">
+      <button class="filter-btn active" data-filter="all">Todos</button>
+      <button class="filter-btn" data-filter="universitaria">Universidad</button>
+      <button class="filter-btn" data-filter="empresarial">Empresarial</button>
+      <button class="filter-btn" data-filter="gubernamental">Gubernamental</button>
+      <button class="filter-btn" data-filter="social">Social</button>
+    </div>
+
+    <!-- Grid -->
+    <div class="projects-grid">
+
+      <!-- Proyecto 1: Smart Access -->
+      <article class="project-card" data-category="empresarial">
+        <div class="project-card-banner bg-purple">
+          <span class="banner-icon">⚡</span>
+          <span class="project-status status-progress">En desarrollo</span>
+        </div>
+        <div class="project-card-body">
+          <div class="project-category">Empresarial · Control de acceso</div>
+          <h3 class="project-title">Smart Access</h3>
+          <p class="project-desc">
+            Control de entradas y salidas de estudiantes en el CETIS 63, Ameca Jalisco.
+            Sistema de asistencia automatizada con comunicación directa a padres de familia
+            para informes en tiempo real sobre la asistencia de los estudiantes.
+          </p>
+          <div class="project-stack">
+            <span class="tag">Laravel</span>
+            <span class="tag">Vue</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Bootstrap</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">Figma</span>
+          </div>
+        </div>
+        <div class="project-card-footer">
+          <div class="project-links">
+            <a href="https://github.com/EGuerreroS" target="_blank" class="project-link" aria-label="Ver en GitHub">
+              <i class="ph ph-github-logo"></i>
+            </a>
+            <a href="#" class="project-link disabled" aria-label="Demo en desarrollo">
+              <i class="ph ph-arrow-square-out"></i>
+            </a>
+          </div>
+          <span class="tag">🚧 WIP</span>
+        </div>
+      </article>
+
+      <!-- Proyecto 2: Social Force -->
+      <article class="project-card" data-category="gubernamental social">
+        <div class="project-card-banner bg-teal">
+          <span class="banner-icon">🌳</span>
+          <span class="project-status status-done">Completado</span>
+        </div>
+        <div class="project-card-body">
+          <div class="project-category">Gubernamental · App Social</div>
+          <h3 class="project-title">Social Force</h3>
+          <p class="project-desc">
+            App móvil para comunicación entre gobierno y ciudadanos. Creada para ENACTUS Swift 
+            Change Makers HACKATHON (Monterrey, 2024). Comunidad para reportar afectaciones en 
+            la ciudad con vía directa a instituciones de gobierno.
+          </p>
+          <div class="project-stack">
+            <span class="tag">Swift</span>
+            <span class="tag">Firebase</span>
+            <span class="tag">Figma</span>
+            <span class="tag">Adobe Suite</span>
+          </div>
+        </div>
+        <div class="project-card-footer">
+          <div class="project-links">
+            <a href="https://github.com/EGuerreroS" target="_blank" class="project-link" aria-label="Ver en GitHub">
+              <i class="ph ph-github-logo"></i>
+            </a>
+            <a href="#" class="project-link disabled" aria-label="Demo no disponible">
+              <i class="ph ph-arrow-square-out"></i>
+            </a>
+          </div>
+          <span class="tag">Hackathon</span>
+        </div>
+      </article>
+
+      <!-- Proyecto 3: Dental Ease -->
+      <article class="project-card" data-category="empresarial">
+        <div class="project-card-banner bg-rose">
+          <span class="banner-icon">🦷</span>
+          <span class="project-status status-done">Completado</span>
+        </div>
+        <div class="project-card-body">
+          <div class="project-category">Empresarial · Gestión médica</div>
+          <h3 class="project-title">Dental Ease</h3>
+          <p class="project-desc">
+            Sistema de gestión de citas para consultorio dental. Control de pacientes, calendario
+            de citas, recordatorios y historial de atención. Diseñado para un consultorio privado
+            con interfaz intuitiva.
+          </p>
+          <div class="project-stack">
+            <span class="tag">Laravel</span>
+            <span class="tag">Vue</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">Figma</span>
+          </div>
+        </div>
+        <div class="project-card-footer">
+          <div class="project-links">
+            <a href="https://github.com/EGuerreroS" target="_blank" class="project-link" aria-label="Ver en GitHub">
+              <i class="ph ph-github-logo"></i>
+            </a>
+            <a href="#" class="project-link disabled" aria-label="Demo no disponible">
+              <i class="ph ph-arrow-square-out"></i>
+            </a>
+          </div>
+          <span class="tag">SaaS</span>
+        </div>
+      </article>
+
+      <!-- Proyecto 4: SISPA Móvil -->
+      <article class="project-card" data-category="universitaria">
+        <div class="project-card-banner bg-indigo">
+          <span class="banner-icon">📱</span>
+          <span class="project-status status-done">Completado</span>
+        </div>
+        <div class="project-card-body">
+          <div class="project-category">Universidad · PWA</div>
+          <h3 class="project-title">SISPA Móvil</h3>
+          <p class="project-desc">
+            App PWA para estudiantes de Electrónica y Computación en CUValles. Solicitud de
+            documentos y peticiones al coordinador de carrera, con integración al sistema SIIAU
+            de la Red UDG para autenticación.
+          </p>
+          <div class="project-stack">
+            <span class="tag">Quasar</span>
+            <span class="tag">Vue</span>
+            <span class="tag">Laravel</span>
+            <span class="tag">SIIAU API</span>
+            <span class="tag">Figma</span>
+          </div>
+        </div>
+        <div class="project-card-footer">
+          <div class="project-links">
+            <a href="https://github.com/EGuerreroS" target="_blank" class="project-link" aria-label="Ver en GitHub">
+              <i class="ph ph-github-logo"></i>
+            </a>
+            <a href="#" class="project-link disabled" aria-label="Demo no disponible">
+              <i class="ph ph-arrow-square-out"></i>
+            </a>
+          </div>
+          <span class="tag">PWA</span>
+        </div>
+      </article>
+
+      <!-- Proyecto 5: Help Desk Soporte Técnico -->
+      <article class="project-card" data-category="universitaria">
+        <div class="project-card-banner bg-amber">
+          <span class="banner-icon">🖥️</span>
+          <span class="project-status status-done">Completado</span>
+        </div>
+        <div class="project-card-body">
+          <div class="project-category">Universidad · Web App</div>
+          <h3 class="project-title">Help Desk Soporte Técnico</h3>
+          <p class="project-desc">
+            Sistema de gestión de reportes de fallas en dispositivos y redes para el área de
+            soporte técnico de CUValles. Protección de rutas con JWT y embebido de Vue 3 en Laravel
+            para una experiencia de aplicación de página única.
+          </p>
+          <div class="project-stack">
+            <span class="tag">Vue</span>
+            <span class="tag">Laravel</span>
+            <span class="tag">MySQL</span>
+          </div>
+        </div>
+        <div class="project-card-footer">
+          <div class="project-links">
+            <a href="https://github.com/EGuerreroS" target="_blank" class="project-link" aria-label="Ver en GitHub">
+              <i class="ph ph-github-logo"></i>
+            </a>
+            <a href="#" class="project-link disabled" aria-label="Demo no disponible">
+              <i class="ph ph-arrow-square-out"></i>
+            </a>
+          </div>
+          <span class="tag">Universidad</span>
+        </div>
+      </article>
+
+    </div><!-- /projects-grid -->
+  </div>
+</section>
+
+
+<!-- ============================================================
+     EDUCATION — Formación académica
+     ============================================================ -->
+<section id="education">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="section-label">Formación</span>
+      <h2 class="section-title">Mi <span>educación</span></h2>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="edu-grid">
+
+      <!-- Ingeniería -->
+      <div class="edu-card">
+        <div class="edu-icon-wrap">⚡</div>
+        <div class="edu-info">
+          <div class="edu-period">
+            2021 — 2025
+            <span class="edu-badge graduated">Egresado</span>
+          </div>
+          <div class="edu-degree">Ingeniero en Electrónica y Computación</div>
+          <div class="edu-specialty">Énfasis en Desarrollo de Software</div>
+          <div class="edu-institution">
+            <i class="ph ph-buildings"></i>
+            Centro Universitario de los Valles (UdeG)
+          </div>
+        </div>
+      </div>
+
+      <!-- Certificación Google UX -->
+      <div class="edu-card">
+        <div class="edu-icon-wrap">🎨</div>
+        <div class="edu-info">
+          <div class="edu-period">
+            2024 — 2025
+            <span class="edu-badge graduated">Completado</span>
+          </div>
+          <div class="edu-degree">Google UX Designer</div>
+          <div class="edu-specialty">Certificación Profesional</div>
+          <div class="edu-institution">
+            <i class="ph ph-certificate"></i>
+            Coursera - Google
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /edu-grid -->
+
+    <!-- Concursos y Hackatones -->
+    <div class="hackathons-section fade-up">
+      <h3 class="hackathons-title">🏆 Concursos y <span style="background:var(--gradient-text);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Hackatones</span></h3>
+      
+      <div class="hackathons-grid">
+        <!-- Exposoftware - Ganador múltiple -->
+        <div class="hackathon-card">
+          <div class="hack-number">🥇</div>
+          <div class="hack-title-card">Exposoftware - 1er Lugar (3×)</div>
+          <div class="hack-subtitle">Concurso de desarrollo web · CUValles</div>
+        </div>
+        
+        <div class="hackathon-card">
+          <div class="hack-number">🥉</div>
+          <div class="hack-title-card">Exposoftware - 3er Lugar (1×)</div>
+          <div class="hack-subtitle">Concurso de desarrollo web · CUValles</div>
+        </div>
+
+        <!-- Programación competitiva -->
+        <div class="hackathon-card">
+          <div class="hack-number">🥈</div>
+          <div class="hack-title-card">Concurso de Programación Avanzado</div>
+          <div class="hack-subtitle">2do lugar (2×) · CUValles</div>
+        </div>
+
+        <!-- Hackatones nacionales -->
+        <div class="hackathon-card">
+          <div class="hack-number">🚀</div>
+          <div class="hack-title-card">ENACTUS Swift Change Makers HACKATHON</div>
+          <div class="hack-subtitle">Monterrey NL · Abril 2024</div>
+        </div>
+
+        <div class="hackathon-card">
+          <div class="hack-number">🌟</div>
+          <div class="hack-title-card">ENACTUS Changemakers Social Challenge</div>
+          <div class="hack-subtitle">CDMX · Noviembre 2024</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ============================================================
+     SOFTWAVES — Mi empresa
+     ============================================================ -->
+<section id="softwaves" class="alt-bg">
+  <div class="container">
+    <div class="sw-layout">
+
+      <!-- Contenido -->
+      <div class="sw-content fade-left">
+        <div class="sw-eyebrow">
+          <i class="ph ph-rocket-launch"></i>
+          Próximo proyecto
+        </div>
+
+        <h2 class="sw-title">
+          Presentando<br>
+          <span class="sw-brand">SoftWaves</span>
+        </h2>
+
+        <p class="sw-description">
+          <strong>SoftWaves</strong> es mi empresa en formación: un proyecto que nace de la fusión
+          de todos mis conocimientos en tecnología, administración e investigación. La visión es
+          crear soluciones de software de alto impacto para empresas, instituciones educativas y
+          gobiernos, combinando desarrollo ágil con inteligencia artificial.
+        </p>
+
+        <div class="sw-pillars">
+          <div class="sw-pillar">
+            <div class="sw-pillar-icon">🌊</div>
+            <div class="sw-pillar-text">
+              <div class="pillar-title">Soluciones Digitales</div>
+              <div class="pillar-desc">Software especializado web y móvil para usuarios.</div>
+            </div>
+          </div>
+          <div class="sw-pillar">
+            <div class="sw-pillar-icon">💼</div>
+            <div class="sw-pillar-text">
+              <div class="pillar-title">Software Empresarial</div>
+              <div class="pillar-desc">Sistemas robustos y escalables.</div>
+            </div>
+          </div>
+          <div class="sw-pillar">
+            <div class="sw-pillar-icon">🏢</div>
+            <div class="sw-pillar-text">
+              <div class="pillar-title">Consultoría Tech</div>
+              <div class="pillar-desc">Acompañamiento en transformación digital.</div>
+            </div>
+          </div>
+        </div>
+
+        <a href="#contact" class="btn btn-primary">
+          <i class="ph ph-handshake"></i> Hablemos de tu proyecto
+        </a>
+      </div>
+
+      <!-- Visual con logo -->
+      <div class="sw-visual fade-right">
+        <div class="sw-card">
+          <div class="sw-logo-wrap">
+            <!-- Logo con colores (modo oscuro) -->
+            <img src="assets/logos/softwaves-color.png"
+                 alt="SoftWaves Logo"
+                 class="sw-logo sw-logo-dark" />
+            <!-- Logo oscuro (modo claro) -->
+            <img src="assets/logos/softwaves-color.png"
+                 alt="SoftWaves Logo"
+                 class="sw-logo sw-logo-light" />
+          </div>
+          <div class="sw-card-title">SoftWaves</div>
+          <div class="sw-card-tagline">"Donde la tecnología cobra vida"</div>
+
+          <div class="sw-stats">
+            <div class="sw-stat">
+              <div class="sw-stat-num">5+</div>
+              <div class="sw-stat-label">Años de experiencia</div>
+            </div>
+            <div class="sw-stat">
+              <div class="sw-stat-num">8</div>
+              <div class="sw-stat-label">Proyectos</div>
+            </div>
+            <div class="sw-stat">
+              <div class="sw-stat-num">UX</div>
+              <div class="sw-stat-label">Diseño centrado</div>
+            </div>
+          </div>
+
+          <div class="sw-coming-soon">
+            <span class="sw-chip">🚀 Próximamente</span>
+            <span class="sw-chip">💼 Open to work</span>
+            <span class="sw-chip">🌐 softwaves.mx</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     CONTACT — Contacto
+     ============================================================ -->
+<section id="contact">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="section-label">Hablemos</span>
+      <h2 class="section-title">¿Tienes un <span>proyecto</span>?</h2>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="contact-layout">
+
+      <!-- Info de contacto -->
+      <div class="contact-info fade-left">
+        <p class="contact-intro">
+          Estoy disponible para proyectos freelance, colaboraciones, investigación o simplemente
+          para platicar de tecnología y emprendimiento. ¡Escríbeme!
+        </p>
+
+        <div class="contact-methods">
+          <a href="mailto:giohps@gmail.com" class="contact-method">
+            <div class="contact-method-icon"><i class="ph ph-envelope-simple"></i></div>
+            <div class="contact-method-info">
+              <div class="contact-method-label">Email</div>
+              <div class="contact-method-value">giohps@gmail.com</div>
+            </div>
+            <i class="ph ph-arrow-right contact-method-arrow"></i>
+          </a>
+
+          <a href="https://github.com/EGuerreroS" target="_blank" class="contact-method">
+            <div class="contact-method-icon"><i class="ph ph-github-logo"></i></div>
+            <div class="contact-method-info">
+              <div class="contact-method-label">GitHub</div>
+              <div class="contact-method-value">github.com/EGuerreroS</div>
+            </div>
+            <i class="ph ph-arrow-right contact-method-arrow"></i>
+          </a>
+
+          <div class="contact-method" style="cursor:default;">
+            <div class="contact-method-icon"><i class="ph ph-map-pin"></i></div>
+            <div class="contact-method-info">
+              <div class="contact-method-label">Ubicación</div>
+              <div class="contact-method-value">Ameca, Jalisco · México</div>
+            </div>
+          </div>
+        </div>
+
+        <p class="contact-social-title">Sígueme en</p>
+        <div class="contact-social-links">
+          <a href="https://github.com/EGuerreroS" target="_blank" class="contact-social-link" aria-label="GitHub">
+            <i class="ph ph-github-logo"></i>
+          </a>
+          <a href="https://www.instagram.com/geo_eggs/" target="_blank" class="contact-social-link" aria-label="Instagram">
+            <i class="ph ph-instagram-logo"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Formulario -->
+      <div class="contact-form-wrap fade-right">
+        <h3 class="form-title">Envíame un mensaje</h3>
+
+        <form id="contact-form" class="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="name">Nombre <span>*</span></label>
+              <input type="text" id="name" name="name" class="form-input"
+                     placeholder="Tu nombre" required autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">Email <span>*</span></label>
+              <input type="email" id="email" name="email" class="form-input"
+                     placeholder="tu@email.com" required autocomplete="email" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="subject">Asunto <span>*</span></label>
+            <input type="text" id="subject" name="subject" class="form-input"
+                   placeholder="¿De qué quieres hablar?" required />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="message">Mensaje <span>*</span></label>
+            <textarea id="message" name="message" class="form-textarea"
+                      placeholder="Cuéntame sobre tu proyecto o idea..." required></textarea>
+          </div>
+
+          <div class="form-submit">
+            <p class="form-note">Respondo en menos de 24 horas, generalmente mucho antes 😊</p>
+            <button type="submit" class="btn btn-primary form-submit-btn">
+              <i class="ph ph-paper-plane-tilt"></i>
+              <span>Enviar mensaje</span>
+            </button>
+          </div>
+        </form>
+      </div>
+
+    </div><!-- /contact-layout -->
+  </div>
+</section>
+
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-inner">
+
+      <!-- Marca -->
+      <div class="footer-brand">
+        <a href="#hero" class="footer-logo">
+          <div class="footer-logo-badge">EG</div>
+          <span class="footer-logo-name">Edgar Guerrero</span>
+        </a>
+        <p class="footer-tagline">
+          Ingeniero en Electrónica y Computación. Donde la creatividad y la funcionalidad se unen,
+          nacen diseños que cautivan y conectan. Basado en Ameca, Jalisco.
+        </p>
+        <div class="footer-social">
+          <a href="https://github.com/EGuerreroS" target="_blank" class="footer-social-link" aria-label="GitHub">
+            <i class="ph ph-github-logo"></i>
+          </a>
+          <a href="https://www.instagram.com/geo_eggs/" target="_blank" class="footer-social-link" aria-label="Instagram">
+            <i class="ph ph-instagram-logo"></i>
+          </a>
+          <a href="mailto:giohps@gmail.com" class="footer-social-link" aria-label="Email">
+            <i class="ph ph-envelope-simple"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Nav -->
+      <div class="footer-col">
+        <div class="footer-col-title">Navegación</div>
+        <ul class="footer-links">
+          <li><a href="#about">Sobre mí</a></li>
+          <li><a href="#experience">Experiencia</a></li>
+          <li><a href="#skills">Habilidades</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#education">Formación</a></li>
+        </ul>
+      </div>
+
+      <!-- Más -->
+      <div class="footer-col">
+        <div class="footer-col-title">Más</div>
+        <ul class="footer-links">
+          <li><a href="#softwaves">SoftWaves</a></li>
+          <li><a href="#contact">Contacto</a></li>
+          <li><a href="https://github.com/EGuerreroS" target="_blank">GitHub</a></li>
+          <li><a href="https://www.instagram.com/geo_eggs/" target="_blank">Instagram</a></li>
+        </ul>
+      </div>
+
+    </div><!-- /footer-inner -->
+
+    <div class="footer-bottom">
+      <p class="footer-copyright">
+        © 2025 <span>Edgar Guerrero Santana</span>. Todos los derechos reservados.
+      </p>
+      <p class="footer-made-with">
+        Hecho con <span class="heart">♥</span> y mucho café en Ameca, Jalisco
+      </p>
+    </div>
+
+  </div>
+</footer>
+
+<!-- Botón volver arriba -->
+<button id="back-to-top" aria-label="Volver al inicio">
+  <i class="ph ph-arrow-up"></i>
+</button>
+
+
+<!-- ============================================================
+     SCRIPTS
+     ============================================================ -->
+<script src="js/navbar.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/projects.js"></script>
+
+</body>
+</html>
